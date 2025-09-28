@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <script src="../js/task-6.js" type="module"></script>
+  </head>
+  <body>
+    <p><a href="../index.html">Go back</a></p>
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
+    <style>
+      #controls {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      #boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: flex-start;
+      }
+      #boxes > div {
+        border-radius: 4px;
+      }
+    </style>
+  </body>
+</html>
